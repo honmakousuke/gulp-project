@@ -63,7 +63,7 @@ gulp.task('sass', () => {
 });
 
 gulp.task('ejs', ()=> {
-    return gulp.src('./src/ejs/**/*.ejs', '!' + './src/ejs/_*')
+    return gulp.src(['./src/ejs/**/*.ejs', '!src/ejs/**/_*.ejs'])
         .pipe(ejs(ejsDataOption, {}, ejsSettingOption))
         .pipe(htmlmin(htmlminOption))
         .pipe(gulp.dest('./public/'));

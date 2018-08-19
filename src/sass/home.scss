@@ -19,6 +19,9 @@
     .skills-box {
         display: block;
         padding: 0 .5rem;
+        p {
+            margin-top: .75rem;
+        }
     }
 /* about area */
     .about-me {
@@ -86,7 +89,7 @@
             font-weight: normal;
             span {
                 display: block;
-                margin-top: .25rem;
+                margin-top: -.5rem;
                 @include font(12);
             }
             + p {
@@ -130,7 +133,7 @@
         &-sub {
             @include font(16);
             color: #3e8d58;
-            margin-top: 1.75rem;
+            margin-top: 1.75rem !important;
             margin-bottom: -0.75rem;
         }
     }
@@ -144,12 +147,24 @@
             padding-left: 0;
             li {
                 display: inline-block;
-                margin-right: 1.75rem;
+                max-width:64px;
+                width: 100%;
                 margin-top: 1.25rem;
+                text-align: center;
                 img {
-                    max-width: 40px;
+                    max-width: 38px;
                     width: 100%;
+                    margin: auto;
                 }
+                span {
+                    @include font(10);
+                    transform: scale(0.85);
+                    display: block;
+                    margin: -4px 0 0;
+                    font-weight: 600;
+                    letter-spacing: 0.75px;
+                }
+                
             }
         }
     }

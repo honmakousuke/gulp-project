@@ -126,15 +126,19 @@
         @include font(24);
         color: #3e8d58;
         letter-spacing: -0.05rem;
+        
         &-sub {
             @include font(16);
             color: #3e8d58;
-            margin-top: 1rem;
-            margin-bottom: -0.5rem;
+            margin-top: 1.75rem;
+            margin-bottom: -0.75rem;
         }
     }
     .skills-area {
         display: block;
+        &:last-child {
+            margin-bottom: 2.5rem;
+        }
         .skills-icons {
             list-style: none;
             padding-left: 0;
@@ -148,8 +152,9 @@
                 }
             }
         }
-
     }
-
+    .specialty {
+        margin-top: 3.5rem;
+    }
 /* skills area end */
 }

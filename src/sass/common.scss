@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, p, ul, li, div, section, article {
     min-width: 240px;
     height: 100vh;
     align-items: center;
+    z-index: 2;
     .myname {
         display: none;
     }
@@ -96,11 +97,13 @@ footer {
     position:fixed;
     bottom: 0;
     right: 0;
-    background: #ffffff;
-    z-index: 2;
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    z-index: 1;
     .copyright {
         @include font(14);
         padding: 0.5rem 1.5rem .5rem;
+        text-align: right;
     }
 }
 /**/

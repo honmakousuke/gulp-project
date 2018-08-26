@@ -93,12 +93,14 @@ h1, h2, h3, h4, h5, p, ul, li, div, section, article {
 /**/
 footer {
     display: block;
-    position:absolute;
+    position:fixed;
     bottom: 0;
     right: 0;
+    background: #ffffff;
+    z-index: 2;
     .copyright {
         @include font(14);
-        padding: 1rem 1.5rem .5rem;
+        padding: 0.5rem 1.5rem .5rem;
     }
 }
 /**/

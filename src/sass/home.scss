@@ -16,7 +16,8 @@
 
     .greeting-box,
     .career-box,
-    .skills-box {
+    .skills-box,
+    .interest-box {
         display: block;
         padding: 0 .5rem;
         p {
@@ -172,4 +173,22 @@
         margin-top: 3.5rem;
     }
 /* skills area end */
+/* interest area */
+    .whats-interest {
+        @include font(56);
+        font-weight: 500;
+        letter-spacing: 0.25rem;
+        margin-bottom: 4rem;
+        span {
+            color: #20a44b;
+            letter-spacing: -0.25rem;
+        }
+    }
+    .interest-lead {
+        font-weight: 500;
+        @include font(24);
+        color: #3e8d58;
+        margin-top: 4rem;
+    }
+/* interest area end */
 }

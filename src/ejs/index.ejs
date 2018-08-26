@@ -10,24 +10,14 @@ var pageData = {
 <body>
     <script src="assets/js/common.js"></script>
     <article class="wrapper">
-        <header class="content-header">
-            <h1 class="myname">Kosuke Homma</h1>
-            <span><img src="assets/images/prof.jpg"></span>
-            <nav class="content-nav">
-                <ul class="content-menu" id="menu">
-                    <li><a href="#about" class="select" onclick="addClass();">ABOUT</a></li>
-                    <li><a href="#career" class="select" onclick="addClass();">CAREER</a></li>
-                    <li><a href="#skills" class="select" onclick="addClass();">SKILLS</a></li>
-                    <li><a href="#interests" class="select" onclick="addClass();">INTEREST</a></li>
-                </ul>
-            </nav>
-        </header>
+        <%- include('./_partial/_header') %>
         <main class="content-main">
             <section id="about" class="content-section">
                 <div class="greeting-box">
                     <h2 class="about-me">KOSUKE <span>HOMMA</span></h2>
                     <p>web制作会社やSESなんかで、マークアップ・フロントエンドエンジニアとして経験を積んで10年弱。<br>
-                        元々は人材系の会社で人員の手配や管理の仕事などをしていましたが、法律の改正、リーマンショックの影響や個人的な事が色々と重なって、ホームページ制作からこの業界にたどり着く事ができました。
+                        元々は人材系の会社で人員の手配や管理の仕事などをしていましたが、法律の改正やリーマンショック。<br>
+                        当時在籍していた会社の事情など色々と重なって、ホームページ制作からこの業界にたどり着く事ができました。
                     </p>
                     <p>エンジニア一筋！というキャリアではないけれどもその分、色々と臨機応変に対応できます（故意的な無茶ブリはNG）</p>
                     <div class="sns-contact">
@@ -167,9 +157,25 @@ var pageData = {
                     </div>
                 </div>
             </section>
+            <section id="interests" class="content-section">
+                <div class="interest-box">
+                    <h2 class="whats-interest"><span>INTEREST</span></h2>
+                    <p>週末は自宅でずっと動画閲覧とかしてます。<br>
+                       基本、運動は苦手ですが、業務終了後に涼しければ渋谷から自宅まで徒歩で帰ったりしてます。<br>
+                       ジムへ行って身体を鍛えなきゃと少し焦ってます。</p>
+                        
+                    <p>ちょいと前はバンドを組んでギター弾いてました。<br>
+                       楽しかったのと、スケジュールが合わなくなってきたので、現在は休み中。<br>
+                       最近はPCゲームとかまたハマるのも悪くないと考えている。。が、ゲームのプレイ動画を見る方が好き、、</p>
+                    <h3 class="interest-lead">今後やっていきたい事。</h3>
+                    <p>Web開発者として、今までは様々な企業のサイトを手がけてきました。<br>
+                        その経験を活かし、今後はただの企業のサイトだけでなく、Vue.jsやReactなどの<br>
+                        SPA技術を盛り込んだWebサービスに関わってていきたいと考えています。</p>
+                </div>
+            </section>
         </main>
         <footer>
-            <p class="copyright">&copy; kosuke homma</p>
+            <p class="copyright">&copy; kosuke homma  -mail:kou1234ske@hotmail.com-</p>
 
         </footer>
     </article>

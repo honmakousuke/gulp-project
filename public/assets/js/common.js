@@ -1,12 +1,12 @@
-function addClass() {
-    let activeAdd = document.getElementsByClassName('select');
-    let list = activeAdd.classList;
-    console.log(list);
-
-    activeAdd.classList.add('active');
-    console.log(activeAdd.classList);
-
-    
-}
-addClass();
-
+$(function(){
+    // #で始まるリンクをクリックしたら実行されます
+    $('header a[href^="#"]').click(function() {
+      // スクロールの速度
+      var speed = 500; // ミリ秒で記述
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+});
